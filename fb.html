@@ -37,70 +37,87 @@
         </div>
 
         <div class="nav-right">
-            <div class="icon-circle">
-                <i class="fa-solid fa-bars"></i>
+            <div class="nav-dropdown-container">
+                <div class="icon-circle" id="menu-btn"><i class="fa-solid fa-bars"></i></div>
+                <div class="dropdown-panel" id="menu-panel">
+                    <h3>Menu</h3>
+                    <div class="divider"></div>
+                    <p style="color: #65676b; font-size: 13px;">Create, find events, and more.</p>
+                </div>
             </div>
-            <div class="icon-circle">
-                <i class="fa-brands fa-facebook-messenger"></i>
-                <span class="notification-badge">8</span>
+
+            <div class="nav-dropdown-container">
+                <div class="icon-circle" id="messenger-btn">
+                    <i class="fa-brands fa-facebook-messenger"></i>
+                    <span class="notification-badge">8</span>
+                </div>
+                <div class="dropdown-panel" id="messenger-panel">
+                    <div style="display: flex; justify-content: space-between; align-items: center;">
+                        <h3>Chats</h3>
+                        <div class="icon-circle" id="new-chat-btn" style="width: 32px; height: 32px;"><i class="fa-solid fa-pen-to-square"></i></div>
+                    </div>
+                    <div class="search-box" style="margin-top: 10px;"><input type="text" placeholder="Search Messenger"></div>
+                </div>
             </div>
-            <div class="icon-circle">
-                <i class="fa-solid fa-bell"></i>
-                <span class="notification-badge">19</span>
+
+            <div class="nav-dropdown-container">
+                <div class="icon-circle" id="notif-btn">
+                    <i class="fa-solid fa-bell"></i>
+                    <span class="notification-badge">19</span>
+                </div>
+                <div class="dropdown-panel" id="notif-panel">
+                    <h3>Notifications</h3>
+                    <div class="divider"></div>
+                    <p style="text-align: center; color: #65676b; margin-top: 20px;">You have no new notifications.</p>
+                </div>
             </div>
-            <img src="https://via.placeholder.com/40" alt="Profile" class="profile-pic">
+
+            <div class="nav-dropdown-container">
+                <img src="https://placehold.co/40x40/E4E6EB/65676B?text=jS" alt="Profile" class="profile-pic" id="profile-btn">
+                <div class="dropdown-panel" id="profile-panel">
+                    <div class="post-user-info" style="padding: 10px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); border-radius: 8px; margin-bottom: 10px;">
+                        <img src="https://placehold.co/40x40/E4E6EB/65676B?text=jS" alt="Profile" class="profile-pic">
+                        <div>
+                            <h3 style="margin-top: 4px;">juned saiyed</h3>
+                            <span style="color: #0866ff; cursor: pointer;">See all profiles</span>
+                        </div>
+                    </div>
+                    <div class="sidebar-link"><div class="icon-circle"><i class="fa-solid fa-gear"></i></div><span class="sidebar-text">Settings & privacy</span></div>
+                    <div class="sidebar-link"><div class="icon-circle"><i class="fa-solid fa-circle-question"></i></div><span class="sidebar-text">Help & support</span></div>
+                    <div class="sidebar-link"><div class="icon-circle"><i class="fa-solid fa-moon"></i></div><span class="sidebar-text">Display & accessibility</span></div>
+                    <div class="sidebar-link"><div class="icon-circle"><i class="fa-solid fa-arrow-right-from-bracket"></i></div><span class="sidebar-text">Log Out</span></div>
+                </div>
+            </div>
         </div>
     </nav>
 <div class="main-container">
-   <aside class="left-sidebar">
+  <aside class="left-sidebar">
             <div class="sidebar-link">
-                <img src="https://via.placeholder.com/36" alt="Profile" class="profile-pic-small">
-                <span class="sidebar-text">juned saiyad</span>
+                <img src="https://placehold.co/36x36/E4E6EB/65676B?text=JS" alt="Profile" class="profile-pic-small">
+                <span class="sidebar-text">juned saiyed</span>
             </div>
-            <div class="sidebar-link">
-                <i class="fa-solid fa-user-group icon-blue"></i>
-                <span class="sidebar-text">Friends</span>
-            </div>
-            <div class="sidebar-link">
-                <i class="fa-solid fa-clock-rotate-left icon-blue"></i>
-                <span class="sidebar-text">Memories</span>
-            </div>
-            <div class="sidebar-link">
-                <i class="fa-solid fa-bookmark icon-purple"></i>
-                <span class="sidebar-text">Saved</span>
-            </div>
-            <div class="sidebar-link">
-                <i class="fa-solid fa-users icon-blue"></i>
-                <span class="sidebar-text">Groups</span>
-            </div>
-            <div class="sidebar-link">
-                <i class="fa-brands fa-youtube icon-blue" style="color: #e41e3f;"></i>
-                <span class="sidebar-text">Reels</span>
-            </div>
-            <div class="sidebar-link">
-                <i class="fa-solid fa-store icon-blue"></i>
-                <span class="sidebar-text">Marketplace</span>
-            </div>
-            <div class="sidebar-link">
-                <i class="fa-solid fa-newspaper icon-blue"></i>
-                <span class="sidebar-text">Feeds</span>
-            </div>
-            <div class="sidebar-link">
-                <i class="fa-regular fa-calendar-days icon-blue" style="color: #e41e3f;"></i>
-                <span class="sidebar-text">Events</span>
-            </div>
-            <div class="sidebar-link">
-                <i class="fa-solid fa-chart-simple icon-blue"></i>
-                <span class="sidebar-text">Ads Manager</span>
-            </div>
-            <div class="sidebar-link">
-                <div class="icon-circle" style="width: 36px; height: 36px; margin-right: 12px;">
-                    <i class="fa-solid fa-chevron-down" style="font-size: 14px;"></i>
+            <div class="sidebar-link"><i class="fa-solid fa-user-group icon-blue"></i><span class="sidebar-text">Friends</span></div>
+            <div class="sidebar-link"><i class="fa-solid fa-clock-rotate-left icon-blue"></i><span class="sidebar-text">Memories</span></div>
+            <div class="sidebar-link"><i class="fa-solid fa-bookmark icon-purple"></i><span class="sidebar-text">Saved</span></div>
+            <div class="sidebar-link"><i class="fa-solid fa-users icon-blue"></i><span class="sidebar-text">Groups</span></div>
+            <div class="sidebar-link"><i class="fa-brands fa-youtube icon-blue" style="color: #e41e3f;"></i><span class="sidebar-text">Reels</span></div>
+            <div class="sidebar-link"><i class="fa-solid fa-store icon-blue"></i><span class="sidebar-text">Marketplace</span></div>
+            <div class="sidebar-link"><i class="fa-solid fa-newspaper icon-blue"></i><span class="sidebar-text">Feeds</span></div>
+            <div class="sidebar-link"><i class="fa-regular fa-calendar-days icon-blue" style="color: #e41e3f;"></i><span class="sidebar-text">Events</span></div>
+            <div class="sidebar-link"><i class="fa-solid fa-chart-simple icon-blue"></i><span class="sidebar-text">Ads Manager</span></div>
+            
+            <div class="sidebar-link hidden-sidebar-item" style="display: none;"><i class="fa-solid fa-cake-candles icon-purple"></i><span class="sidebar-text">Birthdays</span></div>
+            <div class="sidebar-link hidden-sidebar-item" style="display: none;"><i class="fa-solid fa-gamepad icon-blue"></i><span class="sidebar-text">Gaming Video</span></div>
+            <div class="sidebar-link hidden-sidebar-item" style="display: none;"><i class="fa-brands fa-facebook-messenger icon-blue"></i><span class="sidebar-text">Messenger</span></div>
+            <div class="sidebar-link hidden-sidebar-item" style="display: none;"><i class="fa-solid fa-flag icon-blue" style="color: #f7b928;"></i><span class="sidebar-text">Pages</span></div>
+
+            <div class="sidebar-link" id="toggle-sidebar-btn">
+                <div class="icon-circle" style="width: 36px; height: 36px; margin-right: 12px; background-color: #e4e6eb;">
+                    <i class="fa-solid fa-chevron-down toggle-icon" style="font-size: 14px; color: #050505;"></i>
                 </div>
-                <span class="sidebar-text">See more</span>
+                <span class="sidebar-text toggle-text">See more</span>
             </div>
         </aside>
-
         <main class="content-area">
             
             <div class="remember-password-box">
@@ -116,8 +133,8 @@
 
             <div class="create-post">
                 <div class="create-post-top">
-                    <img src="https://via.placeholder.com/40" alt="Profile" class="profile-pic">
-                    <input type="text" placeholder="What's on your mind, Shahnawaz?">
+                    <img src="https://placehold.co/40x40/E4E6EB/65676B?text=User" alt="Profile" class="profile-pic">
+                    <input type="text" placeholder="What's on your mind, juned?">
                 </div>
                 <div class="divider"></div>
                 <div class="create-post-bottom">
@@ -150,7 +167,7 @@
                 <div class="post-card">
                     <div class="post-header">
                         <div class="post-user-info">
-                            <img src="https://via.placeholder.com/40" alt="Page" class="profile-pic">
+                            <img src="https://placehold.co/40x40/1877f2/ffffff?text=PD" alt="Page" class="profile-pic">
                             <div>
                                 <h3>People's Daily, China</h3>
                                 <span>Yesterday at 10:30 AM · <i class="fa-solid fa-earth-americas"></i></span>
@@ -164,7 +181,32 @@
                     <div class="post-text">
                         <p>China's first national-level testing base integrating road and air operations was officially launched... <strong>See more</strong></p>
                     </div>
-                    <img src="https://via.placeholder.com/590x350" alt="Post Image" class="post-image">
+                    <img src="https://picsum.photos/590/350" alt="Post Image" class="post-image">
+                    
+                    <div class="divider"></div>
+                    <div class="post-actions">
+                        <div class="action-btn"><i class="fa-regular fa-thumbs-up"></i><span>Like</span></div>
+                        <div class="action-btn"><i class="fa-regular fa-message"></i><span>Comment</span></div>
+                        <div class="action-btn"><i class="fa-solid fa-share"></i><span>Share</span></div>
+                    </div>
+                      <div class="post-card">
+                    <div class="post-header">
+                        <div class="post-user-info">
+                            <img src="https://placehold.co/40x40/1877f2/ffffff?text=PD" alt="Page" class="profile-pic">
+                            <div>
+                                <h3>People's Daily, China</h3>
+                                <span>Yesterday at 10:30 AM · <i class="fa-solid fa-earth-americas"></i></span>
+                            </div>
+                        </div>
+                        <div class="post-options">
+                            <i class="fa-solid fa-ellipsis"></i>
+                            <i class="fa-solid fa-xmark"></i>
+                        </div>
+                    </div>
+                    <div class="post-text">
+                        <p>China's first national-level testing base integrating road and air operations was officially launched... <strong>See more</strong></p>
+                    </div>
+                    <img src="https://picsum.photos/590/357" alt="Post Image" class="post-image">
                     
                     <div class="divider"></div>
                     <div class="post-actions">
@@ -173,11 +215,10 @@
                         <div class="action-btn"><i class="fa-solid fa-share"></i><span>Share</span></div>
                     </div>
                 </div>
-
-                 <div class="post-card">
+                  <div class="post-card">
                     <div class="post-header">
                         <div class="post-user-info">
-                            <img src="https://via.placeholder.com/40" alt="Page" class="profile-pic">
+                            <img src="https://placehold.co/40x40/1877f2/ffffff?text=PD" alt="Page" class="profile-pic">
                             <div>
                                 <h3>People's Daily, China</h3>
                                 <span>Yesterday at 10:30 AM · <i class="fa-solid fa-earth-americas"></i></span>
@@ -191,7 +232,7 @@
                     <div class="post-text">
                         <p>China's first national-level testing base integrating road and air operations was officially launched... <strong>See more</strong></p>
                     </div>
-                    <img src="https://via.placeholder.com/590x350" alt="Post Image" class="post-image">
+                    <img src="https://picsum.photos/590/365" alt="Post Image" class="post-image">
                     
                     <div class="divider"></div>
                     <div class="post-actions">
@@ -200,11 +241,10 @@
                         <div class="action-btn"><i class="fa-solid fa-share"></i><span>Share</span></div>
                     </div>
                 </div>
-
-                 <div class="post-card">
+                  <div class="post-card">
                     <div class="post-header">
                         <div class="post-user-info">
-                            <img src="https://via.placeholder.com/40" alt="Page" class="profile-pic">
+                            <img src="https://placehold.co/40x40/1877f2/ffffff?text=PD" alt="Page" class="profile-pic">
                             <div>
                                 <h3>People's Daily, China</h3>
                                 <span>Yesterday at 10:30 AM · <i class="fa-solid fa-earth-americas"></i></span>
@@ -218,7 +258,7 @@
                     <div class="post-text">
                         <p>China's first national-level testing base integrating road and air operations was officially launched... <strong>See more</strong></p>
                     </div>
-                    <img src="https://via.placeholder.com/590x350" alt="Post Image" class="post-image">
+                    <img src="https://picsum.photos/590/355" alt="Post Image" class="post-image">
                     
                     <div class="divider"></div>
                     <div class="post-actions">
@@ -227,32 +267,6 @@
                         <div class="action-btn"><i class="fa-solid fa-share"></i><span>Share</span></div>
                     </div>
                 </div>
-
-                 <div class="post-card">
-                    <div class="post-header">
-                        <div class="post-user-info">
-                            <img src="https://via.placeholder.com/40" alt="Page" class="profile-pic">
-                            <div>
-                                <h3>People's Daily, China</h3>
-                                <span>Yesterday at 10:30 AM · <i class="fa-solid fa-earth-americas"></i></span>
-                            </div>
-                        </div>
-                        <div class="post-options">
-                            <i class="fa-solid fa-ellipsis"></i>
-                            <i class="fa-solid fa-xmark"></i>
-                        </div>
-                    </div>
-                    <div class="post-text">
-                        <p>China's first national-level testing base integrating road and air operations was officially launched... <strong>See more</strong></p>
-                    </div>
-                    <img src="https://via.placeholder.com/590x350" alt="Post Image" class="post-image">
-                    
-                    <div class="divider"></div>
-                    <div class="post-actions">
-                        <div class="action-btn"><i class="fa-regular fa-thumbs-up"></i><span>Like</span></div>
-                        <div class="action-btn"><i class="fa-regular fa-message"></i><span>Comment</span></div>
-                        <div class="action-btn"><i class="fa-solid fa-share"></i><span>Share</span></div>
-                    </div>
                 </div>
             </div>
         </main>
@@ -267,6 +281,31 @@
             </div>
         </aside>
 </div>
+
+<div class="chat-popup" id="chat-popup">
+        <div class="chat-header">
+            <div class="chat-header-info">
+                <div class="contact-avatar-container">
+                    <img src="https://placehold.co/32x32/0866ff/ffffff?text=M" class="profile-pic-small" style="margin-right: 8px;">
+                    <div class="online-dot" style="bottom: 5px; right: 8px;"></div>
+                </div>
+                <div>
+                    <h4 style="font-size: 15px;">New message</h4>
+                    <span style="font-size: 12px; color: #65676b;">To: </span>
+                </div>
+            </div>
+            <div class="chat-actions">
+                <i class="fa-solid fa-minus"></i>
+                <i class="fa-solid fa-xmark" id="close-chat"></i>
+            </div>
+        </div>
+        <div class="chat-body"></div>
+        <div class="chat-input-area">
+            <i class="fa-solid fa-circle-plus" style="color: #0866ff;"></i>
+            <input type="text" placeholder="Aa" class="chat-input">
+            <i class="fa-solid fa-thumbs-up" style="color: #0866ff;"></i>
+        </div>
+    </div>
     <script src="fb.js"></script>
 </body>
 </html>
